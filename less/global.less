@@ -1,5 +1,5 @@
-*{
-  box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
 .bg-wrapper {
   background: @off-white;
@@ -7,20 +7,27 @@
   width: 100%;
   background-image: -webkit-linear-gradient(105deg, @blue 50%, @off-white 50%);
   position: relative;
-  @media @sm-tablet{
-    background-image: -webkit-linear-gradient(115deg, @blue 50%, @off-white 50%);
+  @media @sm-tablet {
+    background-image: -webkit-linear-gradient(
+      115deg,
+      @blue 50%,
+      @off-white 50%
+    );
+  }
+  @media @phone{
+    height:600px;
   }
   .branch-dot {
     position: absolute;
     top: 0;
     left: 35vw;
     width: 20vw;
-    @media @lg-tablet{
-      left:45vw;
+    @media @lg-tablet {
+      left: 45vw;
       width: 25vw;
     }
-    @media @sm-tablet{
-      display:none;
+    @media @sm-tablet {
+      display: none;
     }
   }
   .pitcher {
@@ -28,12 +35,12 @@
     top: 75px;
     right: 3vw;
     width: 15vw;
-    @media @lg-tablet{
-      width:13vw;
-      top:40px;
+    @media @lg-tablet {
+      width: 13vw;
+      top: 40px;
     }
-    @media @sm-tablet{
-      display:none;
+    @media @sm-tablet {
+      display: none;
     }
   }
   .phone1 {
@@ -41,14 +48,17 @@
     width: 17vw;
     left: 52vw;
     top: 170px;
-    @media @lg-tablet{
+    @media @lg-tablet {
       width: 22vw;
       left: 57vw;
     }
-    @media @sm-tablet{
+    @media @sm-tablet {
       width: 26vw;
       top: 65px;
-      left:63vw;
+      left: 63vw;
+    }
+    @media @phone{
+      top:80px;
     }
   }
   .portafilter {
@@ -56,13 +66,16 @@
     width: 20vw;
     top: 450px;
     left: 120px;
-    @media @lg-tablet{
-      left:4vw;
-      top:300px;
+    @media @lg-tablet {
+      left: 4vw;
+      top: 300px;
     }
-    @media @sm-tablet{
+    @media @sm-tablet {
       width: 32vw;
       left: 7vw;
+    }
+    @media @phone{
+      top:230px;
     }
   }
   .phone2 {
@@ -70,130 +83,166 @@
     width: 23vw;
     bottom: -60px;
     right: 5vw;
-    @media @lg-tablet{
-      display:none;
+    @media @lg-tablet {
+      display: none;
     }
-    @media @sm-tablet{
-      display:block;
+    @media @sm-tablet {
+      display: block;
       width: 36vw;
-      right:9vw;
+      right: 9vw;
       bottom: -50px;
     }
-  }
-  .phone3{
-    display:none;
-    @media @lg-tablet{
-      position:absolute;
-      display:block;
-      width:27vw;
-      left:22vw;
-      top:400px;
-    }
-    @media @sm-tablet{
+    @media @phone {
       display:none;
+    }
+  }
+  .phone3 {
+    display: none;
+    @media @lg-tablet {
+      position: absolute;
+      display: block;
+      width: 27vw;
+      left: 22vw;
+      top: 400px;
+    }
+    @media @sm-tablet {
+      display: none;
     }
   }
   .logo-wrapper {
     position: absolute;
     left: 10vw;
     top: 110px;
-    @media @lg-tablet{
+    @media @lg-tablet {
       left: 7vw;
-      top:55px;
+      top: 55px;
     }
-    @media @sm-tablet{
-      top:45px;
-      width:50vw;
+    @media @sm-tablet {
+      top: 45px;
+      width: 50vw;
+    }
+    @media @phone{
+      left:12vw;
     }
   }
   .logo {
     position: relative;
     height: 275px;
     width: 400px;
+    @media @phone {
+      width: 200px;
+      height:150px;
+    }
     .logo-img {
-      width:275px;
+      width: 275px;
       position: absolute;
       left: 87px;
-
+      @media @phone {
+        width: 150px;
+        left:20px;
+      }
     }
     .flower {
       height: 65px;
       position: absolute;
       top: 0;
       right: 80px;
+      @media @phone{
+        height:40px;
+        right:60px;
+      }
     }
     .branch {
       position: absolute;
       height: 130px;
       bottom: 69px;
       left: 0;
+      @media @phone{
+        height: 70px;
+        left:-27px;
+        bottom:40px;
+      }
     }
     .flower-dot {
       height: 75px;
       position: absolute;
       bottom: 2px;
       right: -5px;
+      @media @phone{
+        height:50px;
+        bottom:-5px;
+      }
     }
   }
 }
 .cta {
-  left:35vw;
-  margin:auto;
+  left: 35vw;
+  margin: auto;
   position: absolute;
   bottom: 100px;
-  @media @lg-tablet{
-    left:57vw;
+  @media @lg-tablet {
+    left: 57vw;
     bottom: 130px;
   }
-  @media @sm-tablet{
+  @media @sm-tablet {
     left: 5vw;
     bottom: 60px;
+  }
+  @media @phone{
+    left:20vw;
   }
 
   h3 {
     color: @tan;
     font: bold 2rem @main-font;
-    margin-bottom:10px;
+    margin-bottom: 10px;
+    @media @phone{
+      font-size: 1.5rem;
+    }
   }
+
   p {
     color: @off-white;
     font: 2rem @main-font;
+    @media @phone{
+      font-size: 1.5rem;
+    }
   }
 }
 
-.bottom-wrapper{
+.bottom-wrapper {
   display: flex;
-  align-items:flex-start;
-  .image-wrapper{
-    width:30vw;
-    @media @lg-tablet{
-      width:45vw;
+  align-items: flex-start;
+  .image-wrapper {
+    width: 30vw;
+    @media @lg-tablet {
+      width: 45vw;
     }
     .bottom-image {
-      width:100%;
+      width: 100%;
     }
   }
-  .bottom-info{
-    margin:10vw;
-    display:flex;
+  .bottom-info {
+    margin: 10vw;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    h2{
+    h2 {
       font: bold 2em @main-font;
       color: @blue;
-      margin-bottom:1em;
+      margin-bottom: 1em;
     }
-    .coming-soon{
+    .coming-soon {
       background-color: @tan;
-      padding:5px 10px;
+      padding: 5px 10px;
       border-radius: 10px;
       box-sizing: border-box;
       display: inline-block;
     }
-    h4{
+    h4 {
       font: 2em @main-font;
       color: @blue;
-      margin-bottom:1em;
+      margin-bottom: 1em;
     }
   }
 }

@@ -141,6 +141,11 @@ table {
     background-image: -webkit-linear-gradient(115deg, #0F1F40 50%, #ECE6CF 50%);
   }
 }
+@media (max-width: 450px) {
+  .bg-wrapper {
+    height: 600px;
+  }
+}
 .bg-wrapper .branch-dot {
   position: absolute;
   top: 0;
@@ -194,6 +199,11 @@ table {
     left: 63vw;
   }
 }
+@media (max-width: 450px) {
+  .bg-wrapper .phone1 {
+    top: 80px;
+  }
+}
 .bg-wrapper .portafilter {
   position: absolute;
   width: 20vw;
@@ -210,6 +220,11 @@ table {
   .bg-wrapper .portafilter {
     width: 32vw;
     left: 7vw;
+  }
+}
+@media (max-width: 450px) {
+  .bg-wrapper .portafilter {
+    top: 230px;
   }
 }
 .bg-wrapper .phone2 {
@@ -229,6 +244,11 @@ table {
     width: 36vw;
     right: 9vw;
     bottom: -50px;
+  }
+}
+@media (max-width: 450px) {
+  .bg-wrapper .phone2 {
+    display: none;
   }
 }
 .bg-wrapper .phone3 {
@@ -265,15 +285,32 @@ table {
     width: 50vw;
   }
 }
+@media (max-width: 450px) {
+  .bg-wrapper .logo-wrapper {
+    left: 12vw;
+  }
+}
 .bg-wrapper .logo {
   position: relative;
   height: 275px;
   width: 400px;
 }
+@media (max-width: 450px) {
+  .bg-wrapper .logo {
+    width: 200px;
+    height: 150px;
+  }
+}
 .bg-wrapper .logo .logo-img {
   width: 275px;
   position: absolute;
   left: 87px;
+}
+@media (max-width: 450px) {
+  .bg-wrapper .logo .logo-img {
+    width: 150px;
+    left: 20px;
+  }
 }
 .bg-wrapper .logo .flower {
   height: 65px;
@@ -281,17 +318,36 @@ table {
   top: 0;
   right: 80px;
 }
+@media (max-width: 450px) {
+  .bg-wrapper .logo .flower {
+    height: 40px;
+    right: 60px;
+  }
+}
 .bg-wrapper .logo .branch {
   position: absolute;
   height: 130px;
   bottom: 69px;
   left: 0;
 }
+@media (max-width: 450px) {
+  .bg-wrapper .logo .branch {
+    height: 70px;
+    left: -27px;
+    bottom: 40px;
+  }
+}
 .bg-wrapper .logo .flower-dot {
   height: 75px;
   position: absolute;
   bottom: 2px;
   right: -5px;
+}
+@media (max-width: 450px) {
+  .bg-wrapper .logo .flower-dot {
+    height: 50px;
+    bottom: -5px;
+  }
 }
 .cta {
   left: 35vw;
@@ -311,14 +367,29 @@ table {
     bottom: 60px;
   }
 }
+@media (max-width: 450px) {
+  .cta {
+    left: 20vw;
+  }
+}
 .cta h3 {
   color: #FCA800;
   font: bold 2rem Roboto;
   margin-bottom: 10px;
 }
+@media (max-width: 450px) {
+  .cta h3 {
+    font-size: 1.5rem;
+  }
+}
 .cta p {
   color: #ECE6CF;
   font: 2rem Roboto;
+}
+@media (max-width: 450px) {
+  .cta p {
+    font-size: 1.5rem;
+  }
 }
 .bottom-wrapper {
   display: flex;
