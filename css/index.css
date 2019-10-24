@@ -136,6 +136,11 @@ table {
   background-image: -webkit-linear-gradient(105deg, #0F1F40 50%, #ECE6CF 50%);
   position: relative;
 }
+@media (max-width:834px) {
+  .bg-wrapper {
+    background-image: -webkit-linear-gradient(115deg, #0F1F40 50%, #ECE6CF 50%);
+  }
+}
 .bg-wrapper .branch-dot {
   position: absolute;
   top: 0;
@@ -185,7 +190,7 @@ table {
 @media (max-width:834px) {
   .bg-wrapper .phone1 {
     width: 26vw;
-    top: 75px;
+    top: 65px;
     left: 63vw;
   }
 }
@@ -199,6 +204,12 @@ table {
   .bg-wrapper .portafilter {
     left: 4vw;
     top: 300px;
+  }
+}
+@media (max-width:834px) {
+  .bg-wrapper .portafilter {
+    width: 32vw;
+    left: 7vw;
   }
 }
 .bg-wrapper .phone2 {
@@ -216,7 +227,7 @@ table {
   .bg-wrapper .phone2 {
     display: block;
     width: 36vw;
-    right: 11vw;
+    right: 9vw;
     bottom: -50px;
   }
 }
@@ -251,6 +262,7 @@ table {
 @media (max-width:834px) {
   .bg-wrapper .logo-wrapper {
     top: 45px;
+    width: 50vw;
   }
 }
 .bg-wrapper .logo {
@@ -296,6 +308,7 @@ table {
 @media (max-width:834px) {
   .cta {
     left: 5vw;
+    bottom: 60px;
   }
 }
 .cta h3 {

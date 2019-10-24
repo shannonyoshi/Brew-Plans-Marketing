@@ -7,6 +7,9 @@
   width: 100%;
   background-image: -webkit-linear-gradient(105deg, @blue 50%, @off-white 50%);
   position: relative;
+  @media @sm-tablet{
+    background-image: -webkit-linear-gradient(115deg, @blue 50%, @off-white 50%);
+  }
   .branch-dot {
     position: absolute;
     top: 0;
@@ -44,7 +47,7 @@
     }
     @media @sm-tablet{
       width: 26vw;
-      top: 75px;
+      top: 65px;
       left:63vw;
     }
   }
@@ -56,6 +59,10 @@
     @media @lg-tablet{
       left:4vw;
       top:300px;
+    }
+    @media @sm-tablet{
+      width: 32vw;
+      left: 7vw;
     }
   }
   .phone2 {
@@ -69,7 +76,7 @@
     @media @sm-tablet{
       display:block;
       width: 36vw;
-      right:11vw;
+      right:9vw;
       bottom: -50px;
     }
   }
@@ -96,6 +103,7 @@
     }
     @media @sm-tablet{
       top:45px;
+      width:50vw;
     }
   }
   .logo {
@@ -139,6 +147,7 @@
   }
   @media @sm-tablet{
     left: 5vw;
+    bottom: 60px;
   }
 
   h3 {
