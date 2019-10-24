@@ -1,0 +1,190 @@
+*{
+  box-sizing:border-box;
+}
+.bg-wrapper {
+  background: @off-white;
+  height: 1000px;
+  width: 100%;
+  background-image: -webkit-linear-gradient(105deg, @blue 50%, @off-white 50%);
+  position: relative;
+  .branch-dot {
+    position: absolute;
+    top: 0;
+    left: 35vw;
+    width: 20vw;
+    @media @lg-tablet{
+      left:45vw;
+      width: 25vw;
+    }
+    @media @sm-tablet{
+      display:none;
+    }
+  }
+  .pitcher {
+    position: absolute;
+    top: 75px;
+    right: 3vw;
+    width: 15vw;
+    @media @lg-tablet{
+      width:13vw;
+      top:40px;
+    }
+    @media @sm-tablet{
+      display:none;
+    }
+  }
+  .phone1 {
+    position: absolute;
+    width: 17vw;
+    left: 52vw;
+    top: 170px;
+    @media @lg-tablet{
+      width: 22vw;
+      left: 57vw;
+    }
+    @media @sm-tablet{
+      width: 26vw;
+      top: 75px;
+      left:63vw;
+    }
+  }
+  .portafilter {
+    position: absolute;
+    width: 20vw;
+    top: 450px;
+    left: 120px;
+    @media @lg-tablet{
+      left:4vw;
+      top:300px;
+    }
+  }
+  .phone2 {
+    position: absolute;
+    width: 23vw;
+    bottom: -60px;
+    right: 5vw;
+    @media @lg-tablet{
+      display:none;
+    }
+    @media @sm-tablet{
+      display:block;
+      width: 36vw;
+      right:11vw;
+      bottom: -50px;
+    }
+  }
+  .phone3{
+    display:none;
+    @media @lg-tablet{
+      position:absolute;
+      display:block;
+      width:27vw;
+      left:22vw;
+      top:400px;
+    }
+    @media @sm-tablet{
+      display:none;
+    }
+  }
+  .logo-wrapper {
+    position: absolute;
+    left: 10vw;
+    top: 110px;
+    @media @lg-tablet{
+      left: 7vw;
+      top:55px;
+    }
+    @media @sm-tablet{
+      top:45px;
+    }
+  }
+  .logo {
+    position: relative;
+    height: 275px;
+    width: 400px;
+    .logo-img {
+      width:275px;
+      position: absolute;
+      left: 87px;
+
+    }
+    .flower {
+      height: 65px;
+      position: absolute;
+      top: 0;
+      right: 80px;
+    }
+    .branch {
+      position: absolute;
+      height: 130px;
+      bottom: 69px;
+      left: 0;
+    }
+    .flower-dot {
+      height: 75px;
+      position: absolute;
+      bottom: 2px;
+      right: -5px;
+    }
+  }
+}
+.cta {
+  left:35vw;
+  margin:auto;
+  position: absolute;
+  bottom: 100px;
+  @media @lg-tablet{
+    left:57vw;
+    bottom: 130px;
+  }
+  @media @sm-tablet{
+    left: 5vw;
+  }
+
+  h3 {
+    color: @tan;
+    font: bold 2rem @main-font;
+    margin-bottom:10px;
+  }
+  p {
+    color: @off-white;
+    font: 2rem @main-font;
+  }
+}
+
+.bottom-wrapper{
+  display: flex;
+  align-items:flex-start;
+  .image-wrapper{
+    width:30vw;
+    @media @lg-tablet{
+      width:45vw;
+    }
+    .bottom-image {
+      width:100%;
+    }
+  }
+  .bottom-info{
+    margin:10vw;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h2{
+      font: bold 2em @main-font;
+      color: @blue;
+      margin-bottom:1em;
+    }
+    .coming-soon{
+      background-color: @tan;
+      padding:5px 10px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      display: inline-block;
+    }
+    h4{
+      font: 2em @main-font;
+      color: @blue;
+      margin-bottom:1em;
+    }
+  }
+}
