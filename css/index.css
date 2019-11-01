@@ -372,7 +372,11 @@ table {
 }
 .bottom-wrapper .image-wrapper .bottom-image {
   width: 25vw;
-  max-width: 300px;
+}
+@media (max-width: 1226px) {
+  .bottom-wrapper .image-wrapper .bottom-image {
+    width: 35vw;
+  }
 }
 .bottom-wrapper .bottom-info {
   margin: 2vw;

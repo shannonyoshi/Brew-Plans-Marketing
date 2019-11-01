@@ -181,6 +181,7 @@
   align-items: flex-start;
   .image-wrapper {
     width: 30vw;
+
     @media @lg-tablet {
       width: 45vw;
     }
@@ -189,7 +190,9 @@
     }
     .bottom-image {
       width: 25vw;
-      max-width: 300px;
+      @media @desktop {
+        width: 35vw;
+      }
     }
   }
   .bottom-info {
